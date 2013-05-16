@@ -19,13 +19,15 @@ gem "feedbag", github: "dwillis/feedbag"
 gem "coveralls", require: false
 gem "uglifier"
 
+gem "pg"
+
 group :production do
   gem "unicorn"
-  gem "pg"
+  #gem "pg"
 end
 
 group :development do
-  gem "sqlite3"
+  #gem "sqlite3"
 end
 
 group(:development, :testing) do

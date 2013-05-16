@@ -1,3 +1,11 @@
+#development:
+#  adapter: sqlite3
+#  database: db/stringer.sqlite
+
 development:
-  adapter: sqlite3
-  database: db/stringer.sqlite
+  template: template0
+  adapter: postgresql
+  encoding: utf8
+  database: stringer_development
+  pool: 5
+  timeout: 5000
